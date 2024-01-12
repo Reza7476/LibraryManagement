@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Reflection.Metadata.BlobBuilder;
 
-namespace _6_LiybraryManagment;
+namespace LibraryManagement;
 public class Management : ILibrary
 {
 
@@ -138,13 +138,13 @@ public class Management : ILibrary
     }
     public void Displaydetails(string bookName)
     {
-      var book=books.Where(_ => _.Title == bookName).ToList();
-       if(book!=null)
+        var book = books.Where(_ => _.Title == bookName).ToList();
+        if (book != null)
         {
             Console.ForegroundColor = ConsoleColor.Blue;
             foreach (var Book in book)
             {
-                Console.WriteLine( $" {Book.Title}  authure:{ Book.Authure}  category: {Book.Category}");
+                Console.WriteLine($" {Book.Title}  authure:{Book.Authure}  category: {Book.Category}");
             }
             Console.ResetColor();
         }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _6_LiybraryManagment;
+namespace LibraryManagement;
 public class Category
 {
     public Category(string name)

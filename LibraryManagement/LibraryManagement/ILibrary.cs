@@ -1,4 +1,4 @@
-﻿namespace _6_LiybraryManagment;
+﻿namespace LibraryManagement;
 
 public interface ILibrary
 {
